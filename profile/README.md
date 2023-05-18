@@ -25,7 +25,8 @@ implementation of the software. Finally, we show in detail how selected
 workflows can be implemented using the current version of AnFiSA by a medical
 geneticist.
 
-See [Research AnFiSA article in Journal of Biomedical Informatics](https://www.sciencedirect.com/science/article/abs/pii/S153204642200185X)
+See our Research AnFiSA article in the Journal of Biomedical Informatics
+[![Research AnFiSA article in the Journal of Biomedical Informatics](https://ars.els-cdn.com/content/image/1-s2.0-S153204642200185X-ga1_lrg.jpg)](https://www.sciencedirect.com/science/article/abs/pii/S153204642200185X)
 
 See also 
 [User Documentation](https://foromeplatform.github.io/documentation/anfisa-user.v0.7/)
@@ -57,3 +58,12 @@ and as proposals for new use cases.
 
 We also value any feedback regarding the existing functionality, please
 create a GitHub issue here or contact us with your feedback.
+
+## Sponsors
+
+Forome software development has been sponsored by a number of organizations,
+including Harvard University, IBM Cognitive Cloud and 
+IBM Chicago Center for Advanced Studies, Quantori and others.
+
+When we develop Java code we use 
+[JProfiler Java profiler](https://www.ej-technologies.com/products/jprofiler/overview.html)
