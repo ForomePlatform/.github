@@ -9,70 +9,75 @@
 
 # Forome Platform
 
-*Evidence-based data for evidence-based AI — open-source platforms for research data you can trust and verify.*
+**Contents:** [Dorieh](#dorieh) · [Research Data that Can Be Trusted](#research-data-that-can-be-trusted) · [AnFiSA](#anfisa) · [Research projects](#research-projects)
 
 ---
 
 ## About the Forome Association
 
-We are a team of data management experts and bioinformaticians who founded the
-**Forome Open Genomics** community to accelerate Mendelian disease diagnostics.
-Our work spans reproducible data engineering, population and environmental
+We are a team of experts in data management, governance, engineering, and
+bioinformatics. We founded the **Forome Open Genomics** community to accelerate
+Mendelian disease diagnostics and have since expanded our focus to making
+research data trustworthy and verifiable for the age of AI. Our work spans
+reproducible data engineering, data governance, population and environmental
 health, and clinical genomics — and everything we build is open source.
 
 Learn more at the [Forome Association home page](https://forome.org/).
 
 ---
 
-## Dorieh — evidence-based data for evidence-based AI
+## Dorieh
+
+*Evidence-based data for evidence-based AI.*
 
 [![PyPI version of the dorieh package](https://img.shields.io/pypi/v/dorieh)](https://github.com/ForomePlatform/dorieh)
 [![Dorieh documentation](https://img.shields.io/badge/docs-foromeplatform.github.io-blue)](https://foromeplatform.github.io/dorieh/)
 
-**[Dorieh](https://github.com/ForomePlatform/dorieh)** is our open-source platform
-for building **reproducible, verifiable data pipelines** — the foundation for
-trustworthy data in the age of AI.
+**[Dorieh](https://github.com/ForomePlatform/dorieh)** is our open-source
+platform for building **reproducible, verifiable data pipelines** — the
+foundation for trustworthy data in the age of AI.
 
-As AI increasingly writes the pipelines and the models, the old basis for trust —
-a human reads the code and understands it — no longer scales. Dorieh shifts the
-basis of trust from *explain → understand* to *formalize → validate*: it makes
-**what was actually done to the data** something a machine can check, on every run.
+As AI increasingly writes pipelines and models, the old basis for trust — having
+a human read and understand the code — no longer scales. Dorieh shifts that
+basis from *explain → understand* to *formalize → validate*: it makes
+**what was actually done to the data** something a machine can check, on every
+run.
 
 It does this through **actionable provenance**:
 
 - **Provenance** — structured, queryable records of what happened to the data,
-  captured automatically as workflows execute (not narrative PDFs).
+  captured automatically as workflows execute (not static narrative PDFs).
 - **Rules** — formal, machine-checkable predicates over those records, written to
   be read by clinicians, regulators, and governance experts, not only engineers.
 - **Actions** — compliance attestations, audit trails, quality assertions, and
   drift alerts produced as outputs of the pipeline itself. Compliance stops being
   a document and becomes a query.
 
-Under the hood, Dorieh runs portable workflows on the
-[Common Workflow Language (CWL)](https://www.commonwl.org/) with an
-Infrastructure-as-Code deployment, so results can be reproduced on confidential
-data by sharing infrastructure rather than data. It ships production pipelines for
-population and environmental health — CMS Medicare & Medicaid claims (via ResDAC),
-climate and air-pollution data — with built-in cleansing, deduplication, and
-quality control.
+Under the hood, Dorieh runs portable workflows using the
+[Common Workflow Language (CWL)](https://www.commonwl.org/) and Infrastructure
+as Code, so results can be reproduced on confidential data by sharing
+infrastructure rather than the data itself. It ships with production pipelines
+for population and environmental health — CMS Medicare & Medicaid claims (via
+ResDAC) and climate and air-pollution data — with built-in cleansing,
+deduplication, and quality control.
 
 **Explore:** [Documentation](https://foromeplatform.github.io/dorieh/) ·
-[Repository](https://github.com/ForomePlatform/dorieh) ·
-[synthetic-resdac-claims](https://github.com/ForomePlatform/synthetic-resdac-claims)
-— synthetic CMS/ResDAC claims data to test pipelines without real PHI.
+[Repository](https://github.com/ForomePlatform/dorieh)
 
 ---
 
-## Featured book — Research Data that Can Be Trusted
+## Research Data that Can Be Trusted
+
+*Our new book in the SpringerBriefs in Computer Science series (Springer
+Nature, © 2026).*
 
 [![Springer Nature banner for the book "Research Data that Can Be Trusted", showing the cover and title](images/SM_Image_Horizontal_978-3-032-21032-6.png)][book]
 
-***[Research Data that Can Be Trusted][book]*** (SpringerBriefs in Computer
-Science, Springer Nature, 2026) is the book behind Dorieh, by Michael Bouzinier,
-Dmitry Etin, Naeem Khoshnevis, Max Shad, and Scott Yockel. It:
+The [book behind Dorieh][book], by Michael Bouzinier, Dmitry Etin, Naeem
+Khoshnevis, Max Shad, and Scott Yockel,:
 
 - argues for the need for a new approach to **data provenance**;
-- introduces the novel approach of **descriptive dataflow operators**; and
+- introduces the concept of **descriptive dataflow operators**; and
 - applies the framework to analyze **healthcare claims data quality**, revealing
   insights into inconsistencies and deficiencies.
 
@@ -83,16 +88,18 @@ Dmitry Etin, Naeem Khoshnevis, Max Shad, and Scott Yockel. It:
 
 ---
 
-## AnFiSA — variant curation for rare genetic disease
+## AnFiSA
+
+*Variant curation for rare genetic disease.*
 
 **AnFiSA** is an established, fully open-source computational platform for the
 analysis of sequencing data for **rare genetic disease** — a variant curation
-tool built to invite and accept contributions from clinicians, researchers, and
-professional software developers.
+tool designed to invite and accept contributions from clinicians, researchers,
+and professional software developers.
 
 Its design rests on three architectural principles:
 
-- a **multidimensional DBMS** for genomic data, to address reproducibility;
+- a **multidimensional DBMS** for genomic data to support reproducibility;
 - **curated decision trees** adaptable to changing clinical rules; and
 - a **crowdsourcing-friendly interface** for difficult-to-diagnose cases.
 
@@ -115,13 +122,33 @@ is your starting point; the easiest way is to
 
 ---
 
+## Research projects
+
+Open research that underpins and extends our platforms:
+
+**[genetic-evidence-model](https://github.com/ForomePlatform/genetic-evidence-model)**
+— *A Semantic Model of Genetic Evidence.* A framework — SHACL shapes, a curated
+annotation corpus, and versioned protocols — for representing genetic evidence
+from the biomedical literature in a form suitable for variant interpretation,
+automated reasoning, and AI-ready clinical infrastructure. Paper in submission.
+
+**[synthetic-resdac-claims](https://github.com/ForomePlatform/synthetic-resdac-claims)**
+(`synthmed`) — generates synthetic ResDAC / Medicare claims (MEDPAR, MBSF) as
+FTS-conformant fixed-width files, rolling a synthetic beneficiary cohort forward
+year by year with realistic data-quality errors injected. This allows Dorieh
+pipelines to be developed and tested without confidential CMS data. Companion
+dataset on [Zenodo](https://doi.org/10.5281/zenodo.18915558) (CC-BY-4.0);
+methods paper in submission.
+
+---
+
 ## Contribute or provide feedback
 
-If you would like to participate in our projects, please reach out. We invite and
-accept contributions from clinicians, researchers, and professional software
-developers — as source code, documentation, Frequently Asked Questions, and
-proposals for new use cases. We also value feedback on existing functionality —
-please open a GitHub issue or contact us directly.
+If you would like to participate in our projects, please reach out. We welcome
+contributions from clinicians, researchers, and professional software
+developers — including source code, documentation, Frequently Asked Questions,
+and proposals for new use cases. We also value feedback on existing
+functionality: please open a GitHub issue or contact us directly.
 
 ---
 
