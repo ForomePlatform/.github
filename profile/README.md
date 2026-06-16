@@ -9,10 +9,6 @@
 
 # Forome Platform
 
-**Contents:** [Dorieh](#dorieh) · [Research Data that Can Be Trusted](#research-data-that-can-be-trusted) · [AnFiSA](#anfisa) · [Research projects](#research-projects)
-
----
-
 ## About the Forome Association
 
 We are a team of experts in data management, governance, engineering, and
@@ -20,9 +16,31 @@ bioinformatics. We founded the **Forome Open Genomics** community to accelerate
 Mendelian disease diagnostics and have since expanded our focus to making
 research data trustworthy and verifiable for the age of AI. Our work spans
 reproducible data engineering, data governance, population and environmental
-health, and clinical genomics — and everything we build is open source.
+health, clinical genomics, and semantic models of scientific evidence — and
+everything we build is open source.
 
 Learn more at the [Forome Association home page](https://forome.org/).
+
+---
+
+## Contents
+
+On this page:
+
+- [Dorieh](#dorieh) — an open-source platform for building reproducible,
+  verifiable data pipelines — the foundation for trustworthy data in the age of AI.
+- [Research Data that Can Be Trusted](#research-data-that-can-be-trusted) — our
+  SpringerBriefs book that introduces the provenance framework behind Dorieh and
+  applies it to healthcare claims data.
+- [AnFiSA](#anfisa) — a fully open-source platform for variant curation in rare
+  genetic disease, built for contributions from clinicians, researchers, and
+  developers.
+- [Research projects](#research-projects) — open research that underpins and
+  extends our platforms, including a **semantic model of genetic evidence (GEM)**
+  and **synthetic healthcare claims datasets** for testing provenance and
+  data-quality methods.
+---
+
 
 ---
 
@@ -74,7 +92,7 @@ Nature, © 2026).*
 [![Springer Nature banner for the book "Research Data that Can Be Trusted", showing the cover and title](images/SM_Image_Horizontal_978-3-032-21032-6.png)][book]
 
 The [book behind Dorieh][book], by Michael Bouzinier, Dmitry Etin, Naeem
-Khoshnevis, Max Shad, and Scott Yockel,:
+Khoshnevis, Max Shad, and Scott Yockel:
 
 - argues for the need for a new approach to **data provenance**;
 - introduces the concept of **descriptive dataflow operators**; and
