@@ -5,7 +5,7 @@
   one line. (This works because every book link in this file is Markdown, not
   raw HTML, so the [book] label resolves everywhere.)
 -->
-[book]: https://link.springer.com/book/10.1007/978-3-032-21032-6
+[book]: https://tidd.ly/4xE5Zyy
 
 # Forome Platform
 
